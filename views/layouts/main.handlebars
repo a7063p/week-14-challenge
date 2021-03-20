@@ -9,8 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
-  <title>The Tech Blog</title>
-  
+  <title>The Tech Blog</title>  
 </head>
 
 <body>  
@@ -19,7 +18,7 @@
     <nav class="nav-bar">
         {{#if loggedIn}}
         <a href="/" class="btn">Home</a>
-        <a href="/dashboard" class="btn">dashboard</a>
+        <a href="/dashboard-list" class="btn">dashboard</a>
         <a id="logout" class="btn">logout</a>
         {{else}}
         <a href="/" class="btn">Home</a>
@@ -27,10 +26,11 @@
         <a href="/login" class="btn">Login</a>
         {{/if}}
     </nav>
-  </div>  
+  </div>
       <h1>
       <a href="/" class="app-title">The Tech Blog</a>
-    </h1>  
+    </h1>     
+    
   </header>
  
   <div class="wrapper">

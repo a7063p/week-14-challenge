@@ -54,8 +54,14 @@ p {
   justify-content: flex-start;  
 }
 
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
 ul {
   list-style-type: none;
+  
 }
 
 .form-a{
@@ -83,9 +89,26 @@ margin-bottom: 3%;
   background-color: var(--light-dark);
   color: var(--primary);
   border-radius: var(--border-radius);
+  margin: 3px;
 }
 .btn-login:hover {
   color:var(--dark);  
+  transform: translate(0, 0);
+  box-shadow: 2px 2px var(--dark);
+ 
+}
+.btn-post {
+  
+  font-size: 1rem;
+  padding: 6px 5px; 
+  margin: 0 3% 0 0; 
+  background-color: var(--dark);
+  color: var(--primary);
+  border-radius: var(--border-radius);
+}
+.btn-post:hover {
+  color:var(--dark);
+  background-color: var(--light-dark); 
   transform: translate(0, 0);
   box-shadow: 2px 2px var(--dark);
 }
