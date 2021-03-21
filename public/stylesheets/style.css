@@ -20,7 +20,8 @@ body {
   line-height: 1.5;
   font-size: 16px;
 }
-.comments {
+.comments,
+textarea {
   font-family: "IBM Plex Sans", sans-serif;
   color: var(--dark);
   line-height: 1.5;

@@ -7,7 +7,7 @@
         <input class="form-input-login"type="text" id="post-title" name="post-title" autofocus="true"value="{{post.title}}"/>    
 
         <label class="form-label" for="post-content">Content</label>
-        <input class="form-input" type="text" id="post-content" name="post-content" value="{{post.content}}"/>
+        <textarea class="form-input" type="text" id="post-content" name="post-content">{{post.content}}</textarea>
       </div>
       
       <button type="submit" id="edit-post-btn" class="btn-login">Update Post</button>        
@@ -16,6 +16,7 @@
     <a href="/dashboard-list"><ion-icon name="arrow-back-outline"></ion-icon>Back</a>
   </div>  
   </section>
+  
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
