@@ -14,53 +14,9 @@
       <button type="submit" id="delete-post-btn" class="btn-login">Delete</button>        
     </form>
     <a href="/dashboard-list"><ion-icon name="arrow-back-outline"></ion-icon>Back</a>
-  </div>
-  
-  
+  </div>  
   </section>
-
-
-
-
-
-
-
-
-{{!-- 
-
-<article>
-  <a href="/dashboard-list"> &larr; Back to dashboard</a>
-  <h2>
-    Edit Post
-  </h2>
-  <form class="edit-post-form">
-    <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <span>({{format_url post.content}})</span>
-    </div>
-    <div>
-      {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
-      |
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
-    </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
-  </form>
-</article>
-
-<form id="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">add comment</button>
-  </div>
-</form>
-
-{{> comments post.comments}} --}}
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-{{!-- <script src="/javascript/comment.js"></script> --}}

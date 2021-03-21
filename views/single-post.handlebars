@@ -1,21 +1,24 @@
 {{> post-info post}}
 
 {{#if loggedIn}}
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">add comment</button>
-    <button type="button" class="upvote-btn">upvote</button>
-  </div>
-</form>
-{{/if}}
-
+<section>
+<div class="card">
+   <h4 class="card-header text-uppercase">Add New Comment</h4>
+    <form id="comment-form" class="card-body">
+      <div>
+        <label class="form-label" for="comment-body">Comment</label>
+        <input class="form-input" type="text" id="comment" name="comment-body" autofocus="true"/>
+      </div>
+      <button type="submit" class="btn-login">Submit</button>        
+    </form>
+    <a href="/"><ion-icon name="arrow-back-outline"></ion-icon>Back</a>
+  </div>  
+  </section>
+  {{/if}}
+  
 {{> comments post.comments}}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
 {{/if}}
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
